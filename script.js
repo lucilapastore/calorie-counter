@@ -37,6 +37,15 @@ function addEntry() {
 // function that will get the calorie counts from the user's entries.
 function getCaloriesFromInputs(list) {
   let calories = 0;
+  for (const item of list) {
+    const currVal = cleanInputString(item.value);
+    // to confirm is the input is valid
+    const invalidInputMatch = isInvalidInput(currVal);
+
+    if (invalidInputMatch) {
+      alert(`Invalid Input: ${invalidInputMatch[0]}`);
+    }
+  }
 }
 
 addEntryButton.addEventListener("click", addEntry);
