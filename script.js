@@ -34,6 +34,11 @@ function addEntry() {
   targetInputContainer.insertAdjacentElement("beforend", HTMLString);
 }
 
+function calculateCalories(e) {
+  e.preventDefault();
+  isError = false;
+}
+
 // function that will get the calorie counts from the user's entries.
 function getCaloriesFromInputs(list) {
   let calories = 0;
