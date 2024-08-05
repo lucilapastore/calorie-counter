@@ -37,6 +37,9 @@ function addEntry() {
 function calculateCalories(e) {
   e.preventDefault();
   isError = false;
+  let breakfastNumberInputs = document.querySelectorAll(
+    "#breakfast input[type=number]"
+  );
 }
 
 // function that will get the calorie counts from the user's entries.
