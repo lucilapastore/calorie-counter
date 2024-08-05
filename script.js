@@ -40,6 +40,9 @@ function calculateCalories(e) {
   let breakfastNumberInputs = document.querySelectorAll(
     "#breakfast input[type=number]"
   );
+  const lunchNumberInputs = document.querySelectorAll(
+    "#lunch input[type=number]"
+  );
 }
 
 // function that will get the calorie counts from the user's entries.
